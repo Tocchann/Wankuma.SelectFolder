@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Samples.WPF.Netfx
 {
@@ -37,7 +25,8 @@ namespace Samples.WPF.Netfx
 			dlg.InitialFolder = baseFolder;
 			dlg.Title = "フォルダを選択してください";
 			dlg.AddPlace( baseFolder, Wankuma.SelectFolder.WPF.SelectFolder.FDAP.TOP );
-			if( dlg.ShowDialog( this ) == true )
+			dlg.Owner = this;
+			if( dlg.ShowDialog() == true )
 			{
 				EditSelFolder.Text = dlg.SelectedPath;
 			}

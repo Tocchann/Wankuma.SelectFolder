@@ -24,7 +24,8 @@ public partial class MainWindow : Window
 		dlg.InitialFolder = baseFolder;
 		dlg.Title = "フォルダを選択してください";
 		dlg.AddPlace( baseFolder, Wankuma.SelectFolder.WPF.SelectFolder.FDAP.TOP );
-		if( dlg.ShowDialog( this ) == true )
+		dlg.Owner = this;
+		if( dlg.ShowDialog() == true )
 		{
 			EditSelFolder.Text = dlg.SelectedPath;
 		}
