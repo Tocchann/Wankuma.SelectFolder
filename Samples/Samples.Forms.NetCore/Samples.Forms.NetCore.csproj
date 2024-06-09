@@ -4,14 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>true</UseWPF>
-		<LangVersion>latest</LangVersion>
-		<ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Wankuma.SelectFolder.WPF\Wankuma.SelectFolder.WPF.csproj" />
+    <ProjectReference Include="..\..\Wankuma.SelectFolder.Forms\Wankuma.SelectFolder.Forms.csproj" />
   </ItemGroup>
 
 </Project>

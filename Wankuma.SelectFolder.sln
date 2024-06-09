@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wankuma.SelectFolder", "Wankuma.SelectFolder\Wankuma.SelectFolder.csproj", "{6F05C29F-4F87-423D-BB39-EE11C3033F32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wankuma.SelectFolder", "Wankuma.SelectFolder\Wankuma.SelectFolder.csproj", "{6F05C29F-4F87-423D-BB39-EE11C3033F32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wankuma.SelectFolder.WPF", "Wankuma.SelectFolder.WPF\Wankuma.SelectFolder.WPF.csproj", "{43A4C56C-7D76-400A-9AED-47D718DED120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wankuma.SelectFolder.WPF", "Wankuma.SelectFolder.WPF\Wankuma.SelectFolder.WPF.csproj", "{43A4C56C-7D76-400A-9AED-47D718DED120}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{D54FFA81-509A-4711-8C01-BB0511448466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WPF.NetCore", "Samples\Samples.WPF.NetCore\Samples.WPF.NetCore.csproj", "{38AE13E3-A915-4AD2-8B14-5288C37534C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.WPF.NetCore", "Samples\Samples.WPF.NetCore\Samples.WPF.NetCore.csproj", "{38AE13E3-A915-4AD2-8B14-5288C37534C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.WPF.Netfx", "Samples\Samples.WPF.Netfx\Samples.WPF.Netfx.csproj", "{A3171895-176B-4AF0-9AB9-B13D005D080C}"
 EndProject
@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wankuma.SelectFolder.Forms", "Wankuma.SelectFolder.Forms\Wankuma.SelectFolder.Forms.csproj", "{D864674C-04D8-4109-BA01-0874C34DFCDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Forms.NetCore", "Samples\Samples.Forms.NetCore\Samples.Forms.NetCore.csproj", "{00FA2D82-EA1F-4555-856F-28182762B4E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Forms.Netfx", "Samples\Samples.Forms.Netfx\Samples.Forms.Netfx.csproj", "{764ACBC8-C103-48CB-BE69-621CD5245C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{A3171895-176B-4AF0-9AB9-B13D005D080C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3171895-176B-4AF0-9AB9-B13D005D080C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3171895-176B-4AF0-9AB9-B13D005D080C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D864674C-04D8-4109-BA01-0874C34DFCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D864674C-04D8-4109-BA01-0874C34DFCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D864674C-04D8-4109-BA01-0874C34DFCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D864674C-04D8-4109-BA01-0874C34DFCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00FA2D82-EA1F-4555-856F-28182762B4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00FA2D82-EA1F-4555-856F-28182762B4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00FA2D82-EA1F-4555-856F-28182762B4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00FA2D82-EA1F-4555-856F-28182762B4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764ACBC8-C103-48CB-BE69-621CD5245C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764ACBC8-C103-48CB-BE69-621CD5245C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764ACBC8-C103-48CB-BE69-621CD5245C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764ACBC8-C103-48CB-BE69-621CD5245C6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +66,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{38AE13E3-A915-4AD2-8B14-5288C37534C8} = {D54FFA81-509A-4711-8C01-BB0511448466}
 		{A3171895-176B-4AF0-9AB9-B13D005D080C} = {D54FFA81-509A-4711-8C01-BB0511448466}
+		{00FA2D82-EA1F-4555-856F-28182762B4E2} = {D54FFA81-509A-4711-8C01-BB0511448466}
+		{764ACBC8-C103-48CB-BE69-621CD5245C6D} = {D54FFA81-509A-4711-8C01-BB0511448466}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57944837-9E8B-4B59-BA1F-9C225DA18C7E}

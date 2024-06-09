@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Samples.WPF.NetCore"
         mc:Ignorable="d"
-        Title="フォルダ選択サンプル" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+        Title="フォルダ選択サンプル(WPF .NET)" ResizeMode="CanMinimize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
   <Grid Margin="8">
     <Grid.RowDefinitions>
       <RowDefinition Height="auto" />
@@ -25,9 +25,9 @@
         <ColumnDefinition Width="auto" />
         <ColumnDefinition Width="4" />
       </Grid.ColumnDefinitions>
-      <Label Grid.Column="0" Content="フォルダ(_F):" />
+      <Label Grid.Column="0" Content="フォルダ(_F):" VerticalAlignment="Center" />
       <TextBox Grid.Column="1" Text="" VerticalAlignment="Center" x:Name="EditSelFolder" />
-      <Button Grid.Column="3" Content="選択(_S)..." IsDefault="True" Padding="16,4" VerticalAlignment="Center" HorizontalAlignment="Center" Click="OnClick_SelectFolder" />
+      <Button Grid.Column="3" Content="選択(_S)..." IsDefault="True" Padding="16,4" VerticalAlignment="Center" Click="OnClick_SelectFolder" />
     </Grid>
     <Button Grid.Row="4" Content="終了(_E)" Padding="16,4" IsCancel="True" HorizontalAlignment="Center" Click="OnClick_Cancel" />
   </Grid>
