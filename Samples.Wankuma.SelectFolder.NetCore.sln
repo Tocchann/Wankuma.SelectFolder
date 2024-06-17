@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{D1EDBA3C-8724-474E-924F-D812F5690E1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms", "WinForms", "{7A45C1AA-20B9-4F8D-86F6-5853A5121F46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{69E2ECCC-FEF9-4958-BD07-185B03325326}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wankuma.SelectFolder", "Wankuma.SelectFolder\Wankuma.SelectFolder.csproj", "{58F10972-9F95-42FD-AEEA-15543BA76E33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wankuma.SelectFolder.Forms", "Wankuma.SelectFolder.Forms\Wankuma.SelectFolder.Forms.csproj", "{4FB1D27F-5807-48A7-98A2-2F379A31D076}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wankuma.SelectFolder.WPF", "Wankuma.SelectFolder.WPF\Wankuma.SelectFolder.WPF.csproj", "{E4B15692-A7BD-45D0-AA4E-B86E96BBB980}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Forms.NetCore", "Samples\Samples.Forms.NetCore\Samples.Forms.NetCore.csproj", "{A76B95E4-416C-453D-8EC3-2CECC9E82A6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.WPF.NetCore", "Samples\Samples.WPF.NetCore\Samples.WPF.NetCore.csproj", "{FBBD12EA-A206-4852-8E18-B3AB5A52FF83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58F10972-9F95-42FD-AEEA-15543BA76E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F10972-9F95-42FD-AEEA-15543BA76E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F10972-9F95-42FD-AEEA-15543BA76E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F10972-9F95-42FD-AEEA-15543BA76E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB1D27F-5807-48A7-98A2-2F379A31D076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB1D27F-5807-48A7-98A2-2F379A31D076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB1D27F-5807-48A7-98A2-2F379A31D076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB1D27F-5807-48A7-98A2-2F379A31D076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B15692-A7BD-45D0-AA4E-B86E96BBB980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B15692-A7BD-45D0-AA4E-B86E96BBB980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B15692-A7BD-45D0-AA4E-B86E96BBB980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B15692-A7BD-45D0-AA4E-B86E96BBB980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76B95E4-416C-453D-8EC3-2CECC9E82A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76B95E4-416C-453D-8EC3-2CECC9E82A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76B95E4-416C-453D-8EC3-2CECC9E82A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76B95E4-416C-453D-8EC3-2CECC9E82A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBD12EA-A206-4852-8E18-B3AB5A52FF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBD12EA-A206-4852-8E18-B3AB5A52FF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBD12EA-A206-4852-8E18-B3AB5A52FF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBD12EA-A206-4852-8E18-B3AB5A52FF83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58F10972-9F95-42FD-AEEA-15543BA76E33} = {D1EDBA3C-8724-474E-924F-D812F5690E1A}
+		{4FB1D27F-5807-48A7-98A2-2F379A31D076} = {D1EDBA3C-8724-474E-924F-D812F5690E1A}
+		{E4B15692-A7BD-45D0-AA4E-B86E96BBB980} = {D1EDBA3C-8724-474E-924F-D812F5690E1A}
+		{A76B95E4-416C-453D-8EC3-2CECC9E82A6D} = {7A45C1AA-20B9-4F8D-86F6-5853A5121F46}
+		{FBBD12EA-A206-4852-8E18-B3AB5A52FF83} = {69E2ECCC-FEF9-4958-BD07-185B03325326}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70D81405-BE61-45FB-B0BB-2763903F8D1A}
+	EndGlobalSection
+EndGlobal
