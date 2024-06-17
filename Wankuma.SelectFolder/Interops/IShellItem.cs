@@ -21,7 +21,7 @@ internal interface IShellItem // : IUnknown
 	void GetParent();
 	/// <summary>
 	/// このオブジェクトの文字列表記を取得
-	/// GetDisplayName が本来のメソッド名。名前によるアクセスではないことを証明するためにわざと名称変更
+	/// GetDisplayName が本来のメソッド名。名前によるアクセスではないことを証明するためにわざと名称を変更
 	/// </summary>
 	/// <param name="sigdnName"></param>
 	/// <returns>sigdnName に応じた文字列</returns>
