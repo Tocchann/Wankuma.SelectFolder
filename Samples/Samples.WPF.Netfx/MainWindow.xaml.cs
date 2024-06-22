@@ -25,7 +25,7 @@ namespace Samples.WPF.Netfx
 			dlg.InitialFolder = baseFolder;
 			dlg.Title = "フォルダを選択してください";
 			dlg.AddPlace( baseFolder, Wankuma.SelectFolder.WPF.SelectFolder.FDAP.TOP );
-			dlg.Owner = this;
+			//dlg.Owner = this;
 			if( dlg.ShowDialog() == true )
 			{
 				EditSelFolder.Text = dlg.SelectedPath;

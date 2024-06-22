@@ -29,7 +29,7 @@ namespace Samples.Forms.Netfx
 			dlg.InitialFolder = baseFolder;
 			dlg.Title = "フォルダを選択してください";
 			dlg.AddPlace( baseFolder, Wankuma.SelectFolder.Forms.SelectFolder.FDAP.TOP );
-			if( dlg.ShowDialog( this ) == DialogResult.OK )
+			if( dlg.ShowDialog() == DialogResult.OK )
 			{
 				textBox1.Text = dlg.SelectedPath;
 			}
