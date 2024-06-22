@@ -28,6 +28,7 @@ public class SelectFolderBase
 
 	public bool? ShowDialog( IntPtr hwndOwner )
 	{
+		hwndOwner = Utilities.GetSafeOwnerWindow( hwndOwner );
 		var dlg = new FileOpenDialog() as IFileOpenDialog;
 		if( dlg != null )
 		{
