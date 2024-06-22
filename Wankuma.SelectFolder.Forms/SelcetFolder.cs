@@ -8,18 +8,13 @@ namespace Wankuma.SelectFolder.Forms;
 
 public class SelectFolder : SelectFolderBase
 {
-	public new DialogResult ShowDialog()
+	public DialogResult ShowDialog()
 	{
-		var result = base.ShowDialog( IntPtr.Zero );
-		if( result != null )
-		{
-			return result != false ? DialogResult.OK : DialogResult.Cancel;
-		}
-		return DialogResult.Abort;
+		return ShowDialog( null );
 	}
-	public DialogResult ShowDialog( IWin32Window owner )
+	public DialogResult ShowDialog( IWin32Window? owner )
 	{
-		var result = base.ShowDialog( owner.Handle );
+		var result = base.ShowDialog( owner?.Handle??IntPtr.Zero );
 		if( result != null )
 		{
 			return result != false ? DialogResult.OK : DialogResult.Cancel;
