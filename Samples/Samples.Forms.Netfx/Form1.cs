@@ -29,6 +29,7 @@ namespace Samples.Forms.Netfx
 			dlg.InitialFolder = baseFolder;
 			dlg.Title = "フォルダを選択してください";
 			dlg.AddPlace( baseFolder, Wankuma.SelectFolder.Forms.SelectFolder.FDAP.TOP );
+			// if( dlg.ShowDialog( this ) == DialogResult.OK )
 			if( dlg.ShowDialog() == DialogResult.OK )
 			{
 				textBox1.Text = dlg.SelectedPath;
@@ -38,6 +39,17 @@ namespace Samples.Forms.Netfx
 		private void button2_Click( object sender, EventArgs e )
 		{
 			Close();
+		}
+
+		private void button3_Click( object sender, EventArgs e )
+		{
+			var dlg = new FolderBrowserDialog();
+			dlg.Description = "フォルダを選択してください";
+			dlg.SelectedPath = textBox1.Text;
+			if( dlg.ShowDialog( this ) == DialogResult.OK )
+			{
+				textBox1.Text = dlg.SelectedPath;
+			}
 		}
 	}
 }
