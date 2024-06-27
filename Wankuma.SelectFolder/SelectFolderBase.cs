@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Wankuma.SelectFolder.Interops;
 using static Wankuma.SelectFolder.Interops.IFileOpenDialog;
@@ -42,7 +43,8 @@ public class SelectFolderBase
 				if( item != null )
 				{
 					dlg.SetFolder( item );
-					Marshal.ReleaseComObject( item );
+					var refCount = Marshal.ReleaseComObject( item );
+					Debug.Assert( refCount == 0 );
 					setFolder = true;
 				}
 				//	まだフォルダを設定していない場合は初期フォルダを設定する
@@ -52,7 +54,8 @@ public class SelectFolderBase
 					if( item != null )
 					{
 						dlg.SetFolder( item );
-						Marshal.ReleaseComObject( item );
+						var refCount = Marshal.ReleaseComObject( item );
+						Debug.Assert( refCount == 0 );
 					}
 				}
 				//	タイトル
@@ -67,7 +70,8 @@ public class SelectFolderBase
 					if( item != null )
 					{
 						dlg.AddPlace( item, (IFileOpenDialog.FDAP)place.fdap );
-						Marshal.ReleaseComObject( item );
+						var refCount = Marshal.ReleaseComObject( item );
+						Debug.Assert( refCount == 0 );
 					}
 				}
 				//	ダイアログを表示
@@ -76,7 +80,8 @@ public class SelectFolderBase
 				{
 					item = dlg.GetResult();
 					SelectedPath = item.GetName( SIGDN.FILESYSPATH );
-					Marshal.ReleaseComObject( item );
+					var refCount = Marshal.ReleaseComObject( item );
+					Debug.Assert( refCount == 0 );
 					return true;
 				}
 				// キャンセル以外のエラーが来た場合はなにかしら問題ありなので例外を投げる
@@ -88,7 +93,8 @@ public class SelectFolderBase
 			}
 			finally
 			{
-				Marshal.ReleaseComObject( dlg );
+				var refCount = Marshal.ReleaseComObject( dlg );
+				Debug.Assert( refCount == 0 );
 			}
 		}
 		return null;
